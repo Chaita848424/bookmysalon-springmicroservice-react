@@ -10,6 +10,7 @@
         <module name="bookmysalon" />
         <module name="category-service" />
         <module name="service-offering" />
+        <module name="booking-service" />
         <module name="category-service (1)" />
       </profile>
       <profile name="Annotation profile for salon-service" enabled="true">
@@ -25,6 +26,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="booking-service" options="-parameters" />
       <module name="bookmysalon" options="-parameters" />
       <module name="category-service" options="-parameters" />
       <module name="category-service (1)" options="-parameters" />
