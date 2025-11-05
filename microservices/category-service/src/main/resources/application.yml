@@ -1,0 +1,33 @@
+
+
+server:
+  port: 5003
+
+spring:
+  application:
+    name: category-service
+    jpa:
+      hibernate:
+        ddl-auto: update
+
+
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/categorydb_yt
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+spring.jpa.show-sql: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+

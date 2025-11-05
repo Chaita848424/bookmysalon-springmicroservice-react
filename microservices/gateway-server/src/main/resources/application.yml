@@ -1,0 +1,108 @@
+server:
+  port: 5000
+
+spring:
+  application:
+    name: gateway-server
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: BOOKMYSALON
+          uri: lb://BOOKMYSALON
+          predicates:
+            - Path=/auth/**, /api/admin/**, /api/users/salons/**, /users/**
+
+        - id: BOOKING-SERVICE
+          uri: lb://BOOKING-SERVICE
+          predicates:
+            - Path=/api/bookings/**
+
+        - id: SALON-SERVICE
+          uri: lb://SALON-SERVICE
+          predicates:
+            - Path=/salons/**
+            - Path=/api/salons/**
+            - Path=/api/admin/salons/**
+
+        - id: SERVICE-OFFERING
+          uri: lb://SERVICE-OFFERING
+          predicates:
+            - Path=/api/service-offering/**
+
+        - id: PAYMENT-SERVICE
+          uri: lb://PAYMENT-SERVICE
+          predicates:
+            - Path=/api/payments/**
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+
+#server:
+#  port: 5000
+#
+#spring:
+#  application:
+#    name: gateway-server
+#
+#
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+#      routes:
+#        - id: BOOKMYSALON
+#          uri:
+#            "lb://BOOKMYSALON"
+#          predicates:
+#            - Path= /auth/**, /api/admin/**, /api/users/salons/**, /users/**
+#
+#        - id: BOOKING-SERVICE
+#          uri:
+#            "lb://BOOKING-SERVICE"
+#          predicates:
+#            - Path= /api/bookings/**
+#
+#        - id: SALON-SERVICE
+#          uri:
+#            "lb://SALON-SERVICE"
+#          predicates:
+#            - Path= /salons/**, /api/salons/**, /api/admin/salons/**
+#
+#        - id: SERVICE-OFFERING
+#          uri:
+#            "lb://SERVICE-OFFERING"
+#          predicates:
+#            - Path= /api/service-offering/**
+#
+#        - id: PAYMENT-SERVICE
+#          uri:
+#            "lb://PAYMENT-SERVICE"
+#          predicates:
+#            - Path= /api/payments/**
+#
+#
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#
+#
+#
+

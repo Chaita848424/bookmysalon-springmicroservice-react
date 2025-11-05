@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservices/bookmysalon/bookmysalon.iml" filepath="$PROJECT_DIR$/microservices/bookmysalon/bookmysalon.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bookmysalonproject.iml" filepath="$PROJECT_DIR$/.idea/bookmysalonproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservices/category-service/category-service (1).iml" filepath="$PROJECT_DIR$/microservices/category-service/category-service (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservices/payment-service/payment-service.iml" filepath="$PROJECT_DIR$/microservices/payment-service/payment-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservices/salon-service/salon-service.iml" filepath="$PROJECT_DIR$/microservices/salon-service/salon-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservices/service-offering/service-offering.iml" filepath="$PROJECT_DIR$/microservices/service-offering/service-offering.iml" />
     </modules>
   </component>
 </project>

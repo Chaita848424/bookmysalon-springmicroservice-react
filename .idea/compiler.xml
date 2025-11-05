@@ -7,22 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bookmysalon" />
         <module name="category-service" />
-        <module name="service-offering" />
+        <module name="payment-service" />
         <module name="booking-service" />
+        <module name="gateway-server" />
+        <module name="bookmysalon" />
+        <module name="salon-service" />
+        <module name="eureka-server" />
+        <module name="service-offering" />
         <module name="category-service (1)" />
       </profile>
-      <profile name="Annotation profile for salon-service" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar" />
-        </processorPath>
-        <module name="salon-service" />
-      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka.server" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -30,6 +28,10 @@
       <module name="bookmysalon" options="-parameters" />
       <module name="category-service" options="-parameters" />
       <module name="category-service (1)" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="eureka.server" options="-parameters" />
+      <module name="gateway-server" options="-parameters" />
+      <module name="payment-service" options="-parameters" />
       <module name="salon-service" options="-parameters" />
       <module name="service-offering" options="-parameters" />
     </option>

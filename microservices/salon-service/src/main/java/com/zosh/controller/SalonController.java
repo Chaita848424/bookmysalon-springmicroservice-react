@@ -44,7 +44,7 @@ return ResponseEntity.ok(salonDTO1);
     }
     //  http://localhost:5002/api/salons
     @GetMapping()
-    public ResponseEntity<List<SalonDTO>> getSalons() throws Exception {
+    public ResponseEntity<List<SalonDTO>> getAllSalons() throws Exception {
 
         List<Salon> salons=salonService.getAllSalons();
 

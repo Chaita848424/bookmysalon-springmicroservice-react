@@ -1,0 +1,59 @@
+server:
+  port: 5001
+
+spring:
+  application:
+    name: bookmysalon
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/userdb_yt?createDatabaseIfNotExist=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+#server:
+#  port: 5001
+#
+#spring:
+#  application:
+#    name: bookmysalon
+#
+#
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/userdb_yt?createDatabaseIfNotExist=true
+#    username: root
+#    password: root
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#
+#
+#
+
+

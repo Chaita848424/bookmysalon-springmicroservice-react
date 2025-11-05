@@ -10,7 +10,17 @@
         <option value="$PROJECT_DIR$/microservices/booking-service/pom.xml" />
         <option value="$PROJECT_DIR$/microservices/category-service/pom.xml" />
         <option value="$PROJECT_DIR$/microservices/service-offering/pom.xml" />
+        <option value="$PROJECT_DIR$/microservices/payment-service/pom.xml" />
+        <option value="$PROJECT_DIR$/microservices/eureka.server/pom.xml" />
+        <option value="$PROJECT_DIR$/microservices/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/microservices/bookmysalon/pom.xml" />
+        <option value="$PROJECT_DIR$/microservices/gateway-server/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/microservices/eureka.server/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="temurin-17" project-jdk-type="JavaSDK">
