@@ -6,7 +6,7 @@ import com.zosh.mapper.BookingMapper;
 import com.zosh.modal.Booking;
 import com.zosh.modal.SalonReport;
 import com.zosh.service.BookingService;
-import com.zosh.service.SalonService;
+//import com.zosh.service.SalonService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class BookingController {
     @Autowired
-    private SalonService salonService;
+//    private SalonService salonService;
     private  final BookingService bookingService;
     @PostMapping
     public ResponseEntity<Booking> createBooking(
