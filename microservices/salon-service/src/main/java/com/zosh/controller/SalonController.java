@@ -5,6 +5,7 @@ import com.zosh.modal.Salon;
 import com.zosh.payload.dto.SalonDTO;
 import com.zosh.payload.dto.UserDTO;
 import com.zosh.service.SalonService;
+import com.zosh.service.client.UserFeignClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +17,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class SalonController {
    private final SalonService salonService;
-
+private final UserFeignClient userFeignClient;
    //  http://localhost:5002/api/salons
    @PostMapping
    public ResponseEntity<SalonDTO> createSalon

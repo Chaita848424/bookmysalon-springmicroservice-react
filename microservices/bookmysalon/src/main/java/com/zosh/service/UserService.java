@@ -12,4 +12,5 @@ public interface UserService {
     String deleteUser(Long id) throws UserException;
     User updateUser(Long id, User user) throws Exception;
 
+    com.zosh.model.User getUserFromJwt(String jwt);
 }

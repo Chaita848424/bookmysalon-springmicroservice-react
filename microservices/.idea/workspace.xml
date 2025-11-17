@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17fbaab3-f1bd-469d-8417-5a61bc7e8628" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bookmysalon/src/main/java/com/zosh/service/KeycloakService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salon-service/src/main/java/com/zosh/service/client/UserFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/zosh/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/zosh/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmysalon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookmysalon/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmysalon/src/main/java/com/zosh/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookmysalon/src/main/java/com/zosh/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmysalon/src/main/java/com/zosh/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookmysalon/src/main/java/com/zosh/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/salon-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-offering/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-offering/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/bookmysalonproject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/bookmysalonproject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/bookmysalonproject/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/bookmysalonproject/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salon-service/src/main/java/com/zosh/SalonServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/src/main/java/com/zosh/SalonServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salon-service/src/main/java/com/zosh/controller/SalonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/src/main/java/com/zosh/controller/SalonController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +55,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Application.BookingServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SalonServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.ServiceOfferingApplication.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.BookingServiceApplicationTests.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
@@ -82,7 +77,7 @@
       <recent name="D:\bookmysalonproject\microservices\service-offering\src\main\java\com\zosh" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BookingServiceApplication">
     <configuration name="BookingServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zosh.BookingServiceApplication" />
       <module name="booking-service" />
@@ -96,6 +91,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Unnamed" type="CompoundRunConfigurationType">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.BookingServiceApplication" />
+      <item itemvalue="Compound.Unnamed" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BookingServiceApplication" />
