@@ -1,9 +1,11 @@
 import React from "react";
 import StarIcon from '@mui/icons-material/Star';
 import img1 from "../../../assets/services/pexels-kamil-rybarski-3231771-9709013.jpg";
+import { useNavigate } from "react-router-dom";
 const SalonCard =()=>{
+    const navigate=useNavigate();
     return(
-        <div className="" >
+        <div onClick={()=>navigate("/salon/2")} className="cursor-pointer" >
             <div className="w-56 md:w-80 rounded-md bg-slate-100 ">
                 <img className='w-full h-[15 rem] object-cover rounded-t-md' 
                 src={img1} alt=""/>
